@@ -46,7 +46,7 @@ p{
     font-weight: 400;
     line-height: 29px;
     height: 86px;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #8D021F;
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -79,11 +79,7 @@ p{
     letter-spacing: 3px;
     
 }
-.navbar_logo a span{
-    color: red;
-    font-family: 'Quicksand', sans-serif;
-    
-}
+
 .navbar_logo{
     padding-left: 75px;
 }
@@ -132,10 +128,7 @@ p{
     font-size: 23px;
     color: #adb5bd;
 }
-h1 span{
-    border-bottom: solid 4px;
-    border-color: red;
-}
+
 .main-content .c_left{
     width: 40%;
     padding-left: 90px;
@@ -277,6 +270,16 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
+
+  /* feature-header css */
+  .feature_header h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 4.1rem;
+    color: #131318;
+    text-align: center;
+  }
+
 
   /* progress-bar css */
   .progress-bars{
