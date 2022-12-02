@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Metrophobic&family=Noto+Sans:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500&family=Zen+Dots&display=swap');
+
 :root{
     --white: #fff;
     --primary: #007bff;
@@ -90,4 +92,48 @@
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: var(--white);
+}
+
+/* progress-bar css codes */
+
+*,
+*:before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-progress-bars-1, .container-progress-bars-2, .container-progress-bars-3, .container-progress-bars-4{
+    height: 210px;
+    width: 210px;
+    background-color: transparent;
+    border-radius: 8px;
+    /* box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.50); */
+    place-items: center;
+    display: grid;
+}
+.circular-progress-1, .circular-progress-2, .circular-progress-3, .circular-progress-4{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress-1::before, .circular-progress-2::before, .circular-progress-3::before, .circular-progress-4::before{
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.value-container-1, .value-container-2, .value-container-3, .value-container-4{
+    position: relative;
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+    color: black;
 }

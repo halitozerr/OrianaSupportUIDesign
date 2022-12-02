@@ -7,7 +7,12 @@
     <title>Oriana Log</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="progress_bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+      
     
 </head>
 <body>
@@ -15,7 +20,7 @@
     <section class="navbar-section">
         <div class="navbar">
 
-            <div class="navbar_logo"> <a href=""><span>.</span>Oriana<span>Log</span></a> </div>
+            <div class="navbar_logo"> <a href="#main-page"><span>.</span>Oriana<span>Log</span></a> </div>
 
             <nav>
                 <ul>
@@ -31,7 +36,7 @@
     </section>
     
     <!-- main-content -->
-    <div class="main-content">
+    <div id="main-page" class="main-content">
 
        <div class="c_left">
         <h1>Ağınızı <span class="main_content_span">7/24</span> İzleyen Siber Göz</h1>
@@ -47,10 +52,64 @@
     <!-- features section -->
     <section id="features" class="feature-section">
       
+        <div class="feature_header">
+
+            <h1>Oriana Log Nedir ?</h1>
+            <div class="paragraph-1">
+            <p>Dijital altyapılarda bulunan (Sunucu,Switch, Firewall, Web Application Firewall, Storage,Nas,İsletim Sistemi, vb.) cihaz veya yazılımların üzerinde gerçekleşen olayları merkezi bir noktada toplayan yazılımdır.
+            Bu sayede sistem, ağ veya güvenlik yöneticileri tek bir panelden cihazları üzerinde gerçekleşen olay, saldırı veya problemleri kolayca yönetebilmektedir.</p>
+            </div>
+
+        </div>
+
         
+          <div class="progress-bars">
+
+            <!-- sorgu-donus-hızı -->
+            <div class="container-progress-bars-1  container-progress-bars">
+                <div class="circular-progress-1">
+                  <div class="value-container-1">0.95ms</div>
+                </div>
+                <div><p>Sorgu Dönüş Hızı</p></div>
+            </div>
+              
+              <!-- disk-kullanimi -->
+            <div class="container-progress-bars-2 container-progress-bars">
+                <div class="circular-progress-2">
+                  <div class="value-container-2">70%</div>
+                </div>
+                <div><p>Daha Az Disk Kullanımı</p></div>
+            </div>
+
+               <!-- islemci-kullanimi -->
+            <div class="container-progress-bars-3 container-progress-bars">
+                <div class="circular-progress-3">
+                  <div class="value-container-3">75%</div>
+                </div>
+                <div><p>Daha Az İşlemci Kullanımı</p></div>
+            </div>
+
+             <!-- bellek kullanimi -->
+             <div class="container-progress-bars-4 container-progress-bars">
+                <div class="circular-progress-4">
+                  <div class="value-container-4">50%</div>
+                </div>
+                <div><p>Daha Az Bellek Kullanimi</p></div>
+            </div>
+              
+              <!-- progress-bar script -->
+              <script src="script.js"></script>
+          </div>
+          
+
+         
+        
+
+         
+
     </section>
 
-
+ 
 
 </body>
 </html>

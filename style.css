@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Metrophobic&family=Noto+Sans:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Metrophobic&family=Noto+Sans:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500&family=Zen+Dots&display=swap');
 
 *{
     box-sizing: border-box;
@@ -247,8 +247,7 @@ input[type=text], select, textarea{
     background-color:transparent;
     padding: 15px 75px;
     border-radius: 20px;
-    font-size: 1.7rem;
-   
+    font-size: 1.7rem;   
   }
   
   .col-25 {
@@ -278,3 +277,19 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
+
+  /* progress-bar css */
+  .progress-bars{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 90px;
+  }
+  .container-progress-bars:hover{
+    background-color: red;
+  }
+  
+
+ 
+ 
+
