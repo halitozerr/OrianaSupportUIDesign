@@ -272,12 +272,35 @@ input[type=text], select, textarea{
   }
 
   /* feature-header css */
+  .feature-section{
+    background-color: #FFFFFF;
+  }
   .feature_header h1{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 4.1rem;
     color: #131318;
     text-align: center;
+  }
+  .feature_header {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph-1{
+    margin-top: 30px;
+  }
+  .feature_header p{
+    font-family: 'Inter', sans-serif;
+    width: 69%;
+    font-weight: 400;
+    font-style: bold;
+    line-height: 35px;
+    margin: 0 auto;
+    color: #212529;
+    font-size: 1.8rem;
   }
 
 
@@ -288,10 +311,49 @@ input[type=text], select, textarea{
     align-self: center;
     margin-top: 90px;
   }
-  .container-progress-bars:hover{
-    background-color: red;
-  }
   
+  .explanation_pb{
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* about-oriana */
+  .about-oriana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+  }
+
+  .about-oriana-img{
+    transform:
+    perspective(800px)
+    rotateY(20deg) scale(1.1)
+    rotateX(5deg);
+    padding-left: 100px;
+    transition: 0.6s ease all;
+    
+  }
+  .about-oriana-img:hover {
+    transform:
+      rotate(0deg)
+      scale(1)
+      translateY(10px);
+      padding-right: 20px;
+      padding-left: 10px;
+  }
+  .about-oriana-p h1{
+    font-family: 'Inter', sans-serif;
+    color:#8D021F;
+    margin-bottom: 15px;
+  }
+  .about-oriana-p{
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    padding-right: 12px;
+    text-align: left;
+    flex-basis: 650px;
+  }
 
  
  

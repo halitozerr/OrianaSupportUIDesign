@@ -94,6 +94,64 @@
     color: var(--white);
 }
 
+.btn-try {
+    border: none;
+    padding: 0.8em 2.5em;
+    outline: none;
+    color: white;
+    font-style: 1.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  .btn-try:before,
+  .btn-try:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
+  
+  .btn-try:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+  }
+  
+  .btn-try:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+  }
+  
+  .btn-try:hover:before {
+    width: 115%;
+    height: 115%;
+  }
+
 /* progress-bar css codes */
 
 *,
@@ -112,6 +170,8 @@
     /* box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.50); */
     place-items: center;
     display: grid;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
 }
 .circular-progress-1, .circular-progress-2, .circular-progress-3, .circular-progress-4{
     position: relative;
