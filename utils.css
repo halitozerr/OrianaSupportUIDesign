@@ -45,8 +45,14 @@
 
 .btn-contact_us{
     cursor: pointer;
-    border: 2px solid red;  
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
     border-radius:56px;
+}
+
+.btn-contact_us:hover{
+    background-position: 100% 0;
+  background-image: linear-gradient(to left, #0ba360, #3cba92, #30dd8a, #2bb673);
 }
 
 .btn:hover {
@@ -95,62 +101,70 @@
 }
 
 .btn-try {
-    border: none;
-    padding: 0.8em 2.5em;
-    outline: none;
     color: white;
-    font-style: 1.2em;
-    position: relative;
-    z-index: 1;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    text-align: center;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
     cursor: pointer;
-    background: none;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+    display: inline-flex;
+    width: 100px;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    
+  }
+  .btn-try:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   }
   
-  .btn-try:before,
-  .btn-try:after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 10em;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    width: 105%;
-    height: 105%;
-    content: "";
-    z-index: -2;
-    background-size: 400% 400%;
-    background: linear-gradient(
-      60deg,
-      #f79533,
-      #f37055,
-      #ef4e7b,
-      #a166ab,
-      #5073b8,
-      #1098ad,
-      #07b39b,
-      #6fba82
-    );
+  .btn-try:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
   }
   
-  .btn-try:before {
-    -webkit-filter: blur(7px);
-    filter: blur(7px);
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    -webkit-animation: pulse 10s infinite ease;
-    animation: pulse 10s infinite ease;
+  .btn-try:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
   }
+
+
+
+
   
-  .btn-try:after {
-    -webkit-filter: blur(0.3px);
-    filter: blur(0.3px);
+ 
+
+  /* div but it is like button */
+ 
+
+  /* flex col-md-3 */
+  .col-md-3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
   }
-  
-  .btn-try:hover:before {
-    width: 115%;
-    height: 115%;
-  }
+
 
 /* progress-bar css codes */
 
@@ -170,8 +184,9 @@
     /* box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.50); */
     place-items: center;
     display: grid;
+    padding-top:15px ;
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-
 }
 .circular-progress-1, .circular-progress-2, .circular-progress-3, .circular-progress-4{
     position: relative;
