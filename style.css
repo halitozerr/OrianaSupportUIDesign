@@ -384,7 +384,7 @@ p{
 
 
 /* algorithms-area */
-.algorithms-area{
+/* .algorithms-area{
   margin-top: 100px;
   padding: 20px;
 }
@@ -423,8 +423,6 @@ p{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  /* position: relative;
-  left: 59px; */
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 2.4rem;
@@ -436,7 +434,44 @@ p{
   color: #646e83;
   width: 100%;
 
+} */
+.futures-of-algorithms{
+
 }
+
+.text-algo{
+  width: 600px;
+}
+.algorithms-contianer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  
+}
+.algos{
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.img-algo{
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249,250,251,var(--tw-bg-opacity));
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249,250,251,var(--tw-bg-opacity));
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+
 
 /* footer-area */
 footer{
